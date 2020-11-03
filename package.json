@@ -1,0 +1,25 @@
+{
+  "name": "dependency_algo",
+  "version": "1.0.0",
+  "description": "Algorithm for Dependency implementation",
+  "main": "algo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamRohitMittal/Dependency_Algo.git"
+  },
+  "keywords": [
+    "dependency"
+  ],
+  "author": "Rohit Mittal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IamRohitMittal/Dependency_Algo/issues"
+  },
+  "homepage": "https://github.com/IamRohitMittal/Dependency_Algo#readme",
+  "dependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
