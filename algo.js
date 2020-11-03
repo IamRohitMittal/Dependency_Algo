@@ -8,17 +8,18 @@ let fulfilled=[], consideration=[], pending=[],index=0, task;
     console.log("consideration",consideration);
     let dependencyT=dependencies.filter(x=>x['dependent']==task)
     // dependencyT=dependencyT.map(x=>x[])
-    while(dependencyT != null || dependencyT !=undefined || dependencyT != []){
+    while(dependencyT != null || dependencyT != undefined || dependencyT == []){
         dependencyT=dependencyT[0];
         console.log("1. dependencyT : ",dependencyT);
         task=dependencyT['dependency'];
         consideration.push(task);
-        if(dependencies.filter(x=>x['dependent']==task) || dependencies.filter(x=>x['dependent']==task)!=[])
+        if(dependencies.filter(x=>x['dependent']==task)!=[])
             dependencyT=dependencies.filter(x=>x['dependent']==task) 
 
         console.log("2. dependencyT : ",dependencyT);
+        console.log("task : ",task );
+        console.log("consideration : ",consideration );
         if(!dependencyT || dependencyT==[]){
-            consideration.push(dependencyT['dependency']);
             break;
         }
     }
